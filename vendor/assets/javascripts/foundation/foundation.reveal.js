@@ -282,7 +282,7 @@
         if (animData.pop) {
           css.top = $(window).scrollTop() - el.data('offset') + 'px'; //adding root_element instead of window for scrolling offset if modal trigger is below the fold
           var end_css = {
-            top: $(root_element).scrollTop() + el.data('css-top') + 'px', //adding root_element instead of window for scrolling offset if modal trigger is below the fold
+            top: $(window).scrollTop() + el.data('css-top') + 'px', //adding root_element instead of window for scrolling offset if modal trigger is below the fold
             opacity: 1
           };
 
